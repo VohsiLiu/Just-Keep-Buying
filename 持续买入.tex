@@ -1,0 +1,57 @@
+\documentclass{JustKeepBuying}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\renewcommand*{\songti}{\CJKfamily{zhsong}}
+\renewcommand*{\heiti}{\CJKfamily{zhhei}}
+\renewcommand*{\kaishu}{\CJKfamily{zhkai}}
+\renewcommand*{\fangsong}{\CJKfamily{zhfs}}
+
+\begin{document}
+    \include{封面/封面}
+
+    % 目录
+    \setcounter{tocdepth}{1}
+    \setcounter{secnumdepth}{0}
+    \pagestyle{tocstyle}
+    \pagenumbering{Roman}
+    \tableofcontents
+    \cleardoublepage
+
+    % 正文
+    \pagestyle{docstyle}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+
+    \include{chapter/如何使用这本书} \cleardoublepage
+    \include{chapter/前言} \cleardoublepage
+    \include{chapter/绪章} \cleardoublepage
+    \addtocontents{toc}{\protect\BookTOCBodyOn}
+    \bookpart{第一部分}{储蓄} \cleardoublepage
+    \include{chapter/1你应该存多少钱} \cleardoublepage
+    \include{chapter/2如何存更多钱} \cleardoublepage
+    \include{chapter/3如何让花钱没有负罪感} \cleardoublepage
+    \include{chapter/4你可以接受生活方式多大程度上的改变} \cleardoublepage
+    \include{chapter/5你应该负债吗} \cleardoublepage
+    \include{chapter/6你应该租房还是买房} \cleardoublepage
+    \include{chapter/7如何为房屋首付和其他“大额购买”存钱} \cleardoublepage
+    \include{chapter/8何时可以退休} \cleardoublepage
+    \bookpart{第二部分}{投资} \cleardoublepage
+    \include{chapter/9为什么要投资} \cleardoublepage
+    \include{chapter/10你应该投资什么} \cleardoublepage
+    \include{chapter/11为什么你不应该购买个股} \cleardoublepage
+    \include{chapter/12你投资了吗} \cleardoublepage
+    \include{chapter/13为什么不应该等待逢低买入} \cleardoublepage
+    \include{chapter/14为什么投资要靠运气} \cleardoublepage
+    \include{chapter/15为什么不应该害怕波动} \cleardoublepage
+    \include{chapter/16危机期间如何投资} \cleardoublepage
+    \include{chapter/17应该什么时候卖出} \cleardoublepage
+    \include{chapter/18你应该在哪里投资} \cleardoublepage
+    \include{chapter/19为什么你从来不觉得自己富有} \cleardoublepage
+    \include{chapter/20最重要的资产} \cleardoublepage
+    \addtocontents{toc}{\protect\BookTOCBodyOff}
+    \include{chapter/结语} \cleardoublepage
+    \include{chapter/致谢} \cleardoublepage
+    \include{chapter/注释} \cleardoublepage
+
+\end{document}
